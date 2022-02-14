@@ -116,6 +116,6 @@ view: users {
   }
   measure: length {
     type: number
-    sql: LENGTH(${full_name}) ;;
+    sql: MAX(length(${full_name}));;
     }
 }
