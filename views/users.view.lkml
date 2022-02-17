@@ -118,4 +118,13 @@ view: users {
     type: number
     sql: MAX(length(${full_name}));;
     }
+
+  measure: contact_test {
+    label: "Contact Test"
+    type: string
+    sql: max(1);; # dummy calculation
+    html:
+    <div style="text-align:center;font-size:18px;line-height:1.2em;font-family: Arial;color: #005dff">
+    <u><a href="abc@its.jnj.com" style="color: #005dff;" target="_blank"> <u>Contact Us</u> </a></u></div>;;
+  }
 }
