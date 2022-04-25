@@ -19,8 +19,10 @@ view: products {
 
   dimension: brand {
     type: string
+
     sql: ${TABLE}.brand ;;
   }
+
 
   dimension: category {
     type: string
@@ -40,10 +42,12 @@ view: products {
   dimension: rank {
     type: number
     sql: ${TABLE}.rank ;;
+
   }
 
   dimension: retail_price {
     type: number
+
     sql: ${TABLE}.retail_price ;;
   }
 
@@ -52,6 +56,7 @@ view: products {
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
   measure: total_retail_price {
+
     type: sum
     sql: ${retail_price} ;;
   }
